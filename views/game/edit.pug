@@ -1,0 +1,18 @@
+html
+    head
+        title Ubah Data Game Kamu
+    body
+        form(action=`/game/${data.id_game}?_method=PUT` method="post")
+            label Nama
+                input(type="text" name="name" value=data.name)
+                br
+            label Date release
+                input(type="text" name="date_release" value=data.date_release)
+                br
+            label Developer
+                input(type="text" name="developer" value=data.developer)
+                br
+            label Game Type
+                input(type="text" name="game_type" value=data.game_type)
+                br
+            input(type="submit" value="simpan")
